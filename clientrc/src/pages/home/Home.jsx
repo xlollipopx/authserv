@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 const Home = () => {
     const [start, setStart] = useState('');
 
-    axios.get('http://localhost:5000/api/login')
+    axios.get('http://78.140.252.62/api/login')
         .then(function (response) {
             setStart(response.data);
         })
