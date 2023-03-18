@@ -1,0 +1,44 @@
+.myBtn{
+    padding: 5px 15px;
+    color: black;
+    border: 1px solid teal;
+    font-size: 14px;
+    background: teal;
+    margin: 10px;
+    width: 90px;
+    height: 40px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signinBtn {
+    padding: 5px 15px;
+    color: black;
+    border: 1px solid teal;
+    font-size: 14px;
+    background: teal;
+    width: 90px;
+    margin: 0 0 0 80%;
+    height: 40px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dwBtn {
+
+    padding: 5px 15px;
+    color: black;
+    border: 1px solid teal;
+    font-size: 14px;
+    font-weight: bold;
+    background: teal;
+    margin: 10px;
+    width: 180px;
+    height: 80px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+
+}

@@ -1,0 +1,8 @@
+.myInputCls{
+    width: 100%;
+    padding: 10px 15px;
+    background: transparent;
+    border: 1px solid teal;
+    margin: 0 0 18px 0;
+    font-size: 14px;
+}
