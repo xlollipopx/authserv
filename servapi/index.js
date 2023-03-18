@@ -49,14 +49,12 @@ app.post("/api/activateLicence", (req, res) => {
 
 app.get("/api/verifyAccountId", (req, res) => {
     res.setHeader("Content-Type", "application/json");
-    const { username, hwid } = req.body;
+    const { hwid } = req.body;
     for (let i = 0; i < users.length; i++) {
-        if (users[i].username === username) {
-            if (users[i].hasLicence == true && hwid === users[i].hwid) {
-                return res.status(200).send({
-                    message: 'Success!'
-                });
-            }
+        if (users[i].hasLicence == true && hwid === users[i].hwid) {
+            return res.status(200).send({
+                message: 'Success!'
+            });
         }
     }
     return res.status(400).send({
