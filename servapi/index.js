@@ -26,7 +26,7 @@ let users = [
 
 ];
 
-app.get("/api/activateLicence", (req, res) => {
+app.post("/api/activateLicence", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     const { username, password, hwid } = req.body;
     for (let i = 0; i < users.length; i++) {
