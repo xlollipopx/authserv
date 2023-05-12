@@ -1,0 +1,8 @@
+.Active {
+    color: red;
+}
+
+.Inactive {
+    display: none;
+    color: black;
+}
