@@ -25,7 +25,7 @@ const Account = () => {
 
     async function activateLicence() {
         try {
-            const response = await axios.post('http://localhost:5000/api/addLicence', {
+            const response = await axios.post('http://78.140.252.69/api/addLicence', {
                 token: Cookies.get('token')
             })
 

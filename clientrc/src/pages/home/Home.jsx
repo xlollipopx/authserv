@@ -26,7 +26,7 @@ const Home = () => {
     const download = (e) => {
         e.preventDefault();
         axios({
-            url: 'http://localhost:5000/api/downloadApp',
+            url: 'http://78.140.252.69/api/downloadApp',
             method: "POST",
             responseType: "blob"
         }).then((res) => {

@@ -9,7 +9,7 @@ export default class PostService {
 
         try {
 
-            const response = await axios.post('http://localhost:5000/api/activateLicence', {
+            const response = await axios.post('http://78.140.252.69/api/activateLicence', {
                 token: Cookies.get('token')
             })
 
@@ -21,7 +21,7 @@ export default class PostService {
 
     static async getInfo() {
         try {
-            const response = await axios.post('http://localhost:5000/api/userSiteInfo', {
+            const response = await axios.post('http://78.140.252.69/api/userSiteInfo', {
                 token: Cookies.get('token')
             })
             return response.data;

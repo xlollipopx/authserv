@@ -1,16 +1,11 @@
-version: '3.1'
+version: '3.3'
 
 services:
   mongo:
     container_name: mongo
     image: mongo:latest
-    #volumes:
-    #- ./data:/data/db
+    restart: unless-stopped
+    volumes:
+      - ./data:/data/db
     ports:
-    - '27017:27017'
-  mongo-express: 
-    container_name: mongo-express
-    image: mongo-express
-    ports: 
-    - '8083:8081'
-
+      - '27017:27017'

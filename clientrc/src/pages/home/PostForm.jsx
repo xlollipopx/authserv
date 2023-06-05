@@ -21,7 +21,7 @@ const PostForm = ({ setVisible }) => {
     const singIn = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:5000/api/login', {
+        axios.post('http://78.140.252.69/api/login', {
             email: data.mail,
             password: data.password
         })

@@ -15,7 +15,7 @@ const SignUpForm = ({ setVisible, setSignInVisible }) => {
     const signUp = (e) => {
         e.preventDefault();
 
-        axios.post('http://localhost:5000/api/registration', {
+        axios.post('http://78.140.252.69/api/registration', {
             email: data.mail,
             password: data.password
         })
